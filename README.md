@@ -1,5 +1,5 @@
 # Calibrating PM 2.5 forecasts by functional varying coefficient models  
-目前進度：3.2實際資料分析進行中 
+progress : section3.2 real data  
 ## Requirements:
 1.Numpy  
 2.Scipy  
