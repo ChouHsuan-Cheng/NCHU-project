@@ -7,5 +7,4 @@
 4.Arrayfire  
 5.lpr  
 6.fpca  
-## 專題內容於"專題.pdf"檔案中  
 
