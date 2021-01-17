@@ -8,8 +8,10 @@ FPCA ver.
 4.Numba  
 5.matplotlib  
 6.Arrayfire  
-7.lpr  
-8.fpca
+7.mpl_toolkits  
+8.sklearn  
+9.lpr  
+10.fpca
 
 DINEOF ver.  
 1.Numpy  
