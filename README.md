@@ -1,17 +1,17 @@
 # Calibrating PM 2.5 forecasts by functional varying coefficient models  
 progress : section3.2 deal with real data  
 ## Requirements:
-FPCA ver.
-1.Numpy
-2.Pands
+FPCA ver.  
+1.Numpy  
+2.Pands  
 3.Scipy  
 4.Numba  
-5.matplotlib
+5.matplotlib  
 6.Arrayfire  
 7.lpr  
 8.fpca
 
-DINEOF ver.
+DINEOF ver.  
 1.Numpy  
 2.Pandas  
 3.rpy2  
