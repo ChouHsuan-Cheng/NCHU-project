@@ -12,6 +12,11 @@ FPCA ver.
 8.sklearn  
 9.lpr  
 10.fpca
+**Note:** You also need to have the ArrayFire C/C++ library installed on your machine.You can get it from the following sources.  
+
+* [Download and install binaries](https://arrayfire.com/download-splash/?redirect\_to=/download)  
+
+* [Build and install from github](https://github.com/arrayfire/arrayfire)  
 
 DINEOF ver.  
 1.Numpy  
