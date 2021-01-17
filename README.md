@@ -12,8 +12,8 @@ FPCA ver.
 8.fpca
 
 DINEOF ver.
-1.Numpy
-2.Pandas
-3.rpy2
-4.sinkr in rpy2
+1.Numpy  
+2.Pandas  
+3.rpy2  
+4.sinkr in rpy2  
 5.matplotlib
