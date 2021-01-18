@@ -1,11 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import lpr
-###
 import numpy as np
 import scipy as sp
 from scipy import interpolate
