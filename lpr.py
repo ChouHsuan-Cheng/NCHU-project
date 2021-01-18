@@ -1,22 +1,13 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import numpy as np
 import scipy as sp
 from scipy import signal
 import arrayfire as af
 from numba import jit
 
-
-# In[3]:
-
-
 ###
 # Kernel function
 ###
+
 def EpaFun(x):
     """ Kernel function
     input :
@@ -29,10 +20,6 @@ def EpaFun(x):
 
 def GauFun(x):
     return(np.exp(-np.sum(x**2, 1) / 2))
-
-
-# In[4]:
-
 
 ###
 # BinData
@@ -84,10 +71,6 @@ def Extend_Bin_Data(bin_data, r):
     sumy = np.pad(sumy, extend_range, 'constant', constant_values = 0)
     binx = np.pad(binx, extend_range, 'constant', constant_values = 0)
     return(np.asarray([sumy, binx]))
-
-
-# In[5]:
-
 
 ###
 # Main
@@ -190,13 +173,10 @@ def Lpr(x, y, x0, h, binning = True, bin_weight = True, ker_fun = 'Epan', dtype 
             fit_y[i] = np.linalg.lstsq(s + I, t)[0][0]
     return(fit_y)
 
-
-# In[6]:
-
-
+#####
+# CV for partition method
 #####
 
-# CV for partition method
 def Partition_Data_Size(N, ratio = 0.85):
     def proposition(x, N):
         return(x + x**ratio - N)
@@ -234,10 +214,6 @@ def CV_Partition(x, y, x0, h, n_train = None, binning = True, bin_weight = True,
             ssq[i] = ((test_y - fit_y)**2).sum()
     h_opt = h.take(np.nanargmin(ssq), 0)
     return(h_opt)
-
-
-# In[7]:
-
 
 #########################
 
@@ -312,10 +288,3 @@ def Get_Linear_Equation_Gpu(x, weight, bin_data_num, bin_data_y, r, dtype = 'f4'
     for i in range(1, p):
         s[i, i] += 1e-12
     return([np.array(s).reshape(p**2, -1).T.reshape(-1, p, p), np.array(af.flat(t))])
-
-
-# In[ ]:
-
-
-
-
