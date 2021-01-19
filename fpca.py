@@ -5,10 +5,6 @@ from scipy import interpolate
 from numba import jit
 import random
 
-
-# In[3]:
-
-
 class Fpca(object):
     def __init__(self, x, y, x0, h_mean, h_cov, h_cov_dia, fve = 0.85,
                  binning = True, bin_weight = True, ker_fun = 'Epan', bw_select = 'Partition', dtype = 'f4'):
@@ -422,10 +418,3 @@ class Fpca(object):
         fpc_scores = self.__Fit_Fpc_Scores(x, y)
         return([fpc_scores, self.mean_fun + np.matmul(fpc_scores,
                             self.eig_fun.reshape(self.num_eig_pairs, -1)).reshape(np.append(-1, self.__grid_shape))])
-
-
-# In[ ]:
-
-
-
-
