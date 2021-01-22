@@ -12,7 +12,8 @@ FPCA ver.
 8.sklearn  
 9.lpr  
 10.fpca  
-**Note:** You also need to have the ArrayFire C/C++ library installed on your machine.You can get it from the following sources.  
+(lpr and fpca are from https://github.com/nacro711072/MFPCA )  
+(for Arrayfire , You need to have the ArrayFire C/C++ library installed on your machine.You can get it from the following sources.)  
 
 * [Download and install binaries](https://arrayfire.com/download-splash/?redirect\_to=/download)  
 
