@@ -1,5 +1,5 @@
 # Calibrating PM 2.5 forecasts by functional varying coefficient models  
-progress : section3.2 deal with real data  
+
 ## Requirements packages:
 FPCA ver.  
 1.Numpy  
